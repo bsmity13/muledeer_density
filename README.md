@@ -16,7 +16,7 @@ Submitted to *Ecology*.
 
 ### Camera data  
 
-The raw camera trap data that go into this analysis are stored in the comma-delimited file `data/muledeer_density.csv`. <div style = 'color:red'>TBD: </div>An archived copy of this CSV is stored XX. Full metadata are available with the archived version, but we have included a brief description of each field here:  
+The raw camera trap data that go into this analysis are stored in the comma-delimited file `data/muledeer_density.csv`. <span style = 'color:red'>TBD: </span>An archived copy of this CSV is stored XX. Full metadata are available with the archived version, but we have included a brief description of each field here:  
 
   * `site` -- integer indicating the unique site number.
   * `x` -- x-coordinate of the site in UTMs (EPSG: 32612).
