@@ -55,7 +55,9 @@ Most of the geospatial data needed for this analysis have already been attached 
 
 ## R Script Structure  
 
-Scripts in this repository are meant to be run in numerical order. To save space in this repository, intermediate data files that are created by each script are saved as `data/*.rds`, and this pattern has been added to `.gitignore`. This project is comprised of the following scripts:
+Scripts in this repository are meant to be run in numerical order. To save space in this repository, intermediate data files that are created by each script are saved as `data/*.rds`, and this pattern has been added to `.gitignore`. Thus, users wanting to reproduce this analysis should run the scripts in order to ensure the intermediate files are available for each subsequent step. 
+
+This project is comprised of the following scripts:
 
   * `01_prep_data.R` -- takes the raw data (`data/muledeer_density.csv`) and formats it for analysis using NIMBLE.
   * `02_fit_model.R` -- runs the MCMC estimation algorithm using [NIMBLE](https://r-nimble.org/). Sources the model definition in `99_NIMBLE_defn.R`.
@@ -64,5 +66,5 @@ Scripts in this repository are meant to be run in numerical order. To save space
   * `05_map_pred.R` -- predicts state variables across all pixels of the study area using the fixed effects estimated in each iteration of the MCMC. Used later to produce Fig. 5 in the main text of the manuscript.
   * `06_figures.R` -- produces final figures that appear in the manuscript and supplementary information.
   * `99_fun.R` -- contains helper functions sourced into various other scripts. Not intended to run on its own.
-  * `99_NIMBLE_defn.R` -- contains the NIMBLE model definition sourced in script 2. Not intended to run on its own.
+  * `99_NIMBLE_defn.R` -- contains the NIMBLE model definition sourced in script `02...`. Not intended to run on its own.
   
