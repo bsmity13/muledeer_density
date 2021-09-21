@@ -12,6 +12,13 @@ _Authors_:
 
 Submitted to *Ecology*.
 
+## Version  
+
+v0.1 -- Prior to peer review.  
+
+[![DOI](https://zenodo.org/badge/408896711.svg)](https://zenodo.org/badge/latestdoi/408896711)
+
+
 ## Data
 
 ### Camera data  
